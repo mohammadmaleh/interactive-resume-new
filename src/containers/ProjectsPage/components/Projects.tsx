@@ -81,25 +81,17 @@ const TagsContainer = styled.div`
 
 export default function Projects({ projectsData }: Props): ReactElement {
   const resumeContext = useContext(ResumeContext);
-  const { projectDetails, tracerNotification } = resumeContext;
+  const { projectDetails } = resumeContext;
   const { changeSelectedProjectDetails } = projectDetails;
-  const { toggleTracerNotification } = tracerNotification;
   const renderProjects = () =>
     projectsData.map((project) => (
       <ProjectContainer
+        title="Click to see more details"
         onClick={() => {
           changeSelectedProjectDetails(project.id);
         }}
       >
-        <ProjectImage
-          image={project.mainImage}
-          onMouseEnter={() => {
-            toggleTracerNotification(true, "Click me to see more details");
-          }}
-          onMouseLeave={() => {
-            toggleTracerNotification(false, "");
-          }}
-        />
+        <ProjectImage image={project.mainImage} />
         <ProjectTitle>{project.name}</ProjectTitle>
         <ProjectCompanyAndDate>
           <p className="company">{project.company}</p>

@@ -35,16 +35,6 @@ export interface ProjectType {
 }
 
 export interface AppStateType {
-  mousePosition: {
-    x: number;
-    y: number;
-    handleMouseMove: ({ clientX, clientY }: React.MouseEvent) => void;
-  };
-  tracerNotification: {
-    text: string;
-    show: boolean;
-    toggleTracerNotification: (show: boolean, text: string | undefined) => void;
-  };
   projectDetails: {
     changeSelectedProjectDetails: (id?: number) => void;
     selectedProjectDetails?: ProjectType;

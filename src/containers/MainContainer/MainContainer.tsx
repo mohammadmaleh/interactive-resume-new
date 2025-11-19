@@ -1,10 +1,10 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import BasicInfo from "../../components/BasicInfo/BasicInfo";
-import MainMenu from "../MainMenu/MainMenu";
+import MainMenuWithTooltip from "../MainMenu/MainMenuWithTooltip";
 
 import Routes from "../../Routes";
-import { HashRouter as Router, useLocation } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import ResumeContext from "../../context/resume.context";
 import { grey } from "../../constants/colors";
 import devices from "../../constants/breakpoints";
@@ -54,9 +54,6 @@ export default function MainContainer(props: MainContainerProps): ReactElement {
         return (
           <Router>
             <FirstContainer
-              onMouseMove={(e) => {
-                context.mousePosition.handleMouseMove(e);
-              }}
               onClick={() => {
                 if (context.projectDetails.selectedProjectDetails)
                   context.projectDetails.changeSelectedProjectDetails();
@@ -67,7 +64,7 @@ export default function MainContainer(props: MainContainerProps): ReactElement {
                   <BasicInfo />
                   <Routes />
                 </ChildContainer>
-                <MainMenu />
+                <MainMenuWithTooltip />
               </Container>
             </FirstContainer>
           </Router>

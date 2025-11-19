@@ -1,4 +1,4 @@
-import React, { ReactElement, useContext } from "react";
+import React, { ReactElement } from "react";
 import styled from "styled-components";
 import profilePicture from "../../assets/main-image.jpeg";
 import { Github } from "@styled-icons/boxicons-logos/Github";
@@ -6,12 +6,9 @@ import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
 import { Mail } from "@styled-icons/entypo/Mail";
 import { Download } from "@styled-icons/boxicons-regular/Download";
 import { white } from "../../constants/colors";
-import ResumeContext from "../../context/resume.context";
 import devices from "../../constants/breakpoints";
 interface Props {}
-interface IconContainerProps {
-  notificationText: string;
-}
+
 const IconContainerDiv = styled.div`
   cursor: pointer;
 `;
@@ -70,25 +67,7 @@ const DownloadIcon = styled(Download)`
   color: ${white};
   height: 30px;
 `;
-function IconContainer(
-  props: React.PropsWithChildren<IconContainerProps>
-): ReactElement {
-  const resumeContext = useContext(ResumeContext);
-  const { toggleTracerNotification } = resumeContext.tracerNotification;
-  const { notificationText } = props;
-  return (
-    <IconContainerDiv
-      onMouseEnter={() => {
-        toggleTracerNotification(true, notificationText);
-      }}
-      onMouseLeave={() => {
-        toggleTracerNotification(false, notificationText);
-      }}
-    >
-      {props.children}
-    </IconContainerDiv>
-  );
-}
+
 export default function BasicInfo({}: Props): ReactElement {
   return (
     <Container data-test="basic-info">
@@ -96,29 +75,29 @@ export default function BasicInfo({}: Props): ReactElement {
       <Name>MOHAMMAD AL MALEH</Name>
       <JobDescription>Frontend Engineer</JobDescription>
       <IconsContainer>
-        <IconContainer notificationText={"Checkout my Github Account"}>
+        <IconContainerDiv title="Checkout my Github Account">
           <a href="https://github.com/mohammadmaleh" target="_blank">
             <GithubIcon />
           </a>
-        </IconContainer>
-        <IconContainer notificationText={"Message me on LinkedIn"}>
+        </IconContainerDiv>
+        <IconContainerDiv title="Message me on LinkedIn">
           <a href="https://www.linkedin.com/in/mohammad-maleh/" target="_blank">
             <LinkedInIcon />
           </a>
-        </IconContainer>
-        <IconContainer notificationText={"Send me an email"}>
+        </IconContainerDiv>
+        <IconContainerDiv title="Send me an email">
           <a href="mailto:mohammad.maleh@gmail.com" target="_blank">
             <MailIcon />
           </a>
-        </IconContainer>
-        <IconContainer notificationText={"Download my resume"}>
+        </IconContainerDiv>
+        <IconContainerDiv title="Download my resume">
           <a
             href="https://drive.google.com/file/d/1pND9_EnxjL6o6tbLl3yj-B_pB-nvIkH4/view?usp=sharing"
             target="_blank"
           >
             <DownloadIcon />
           </a>
-        </IconContainer>
+        </IconContainerDiv>
       </IconsContainer>
       {/*<Button>Download Resume!</Button>*/}
     </Container>
