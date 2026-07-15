@@ -20,6 +20,7 @@ const Container = styled.div`
 const ProfessionalCareerContainer = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: stretch;
   width: 100%;
 `;
 const CompanyAndDuration = styled.div`
@@ -27,19 +28,23 @@ const CompanyAndDuration = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 140px;
+  flex-shrink: 0;
+  width: 170px;
   border-right: solid 2px ${grey};
   padding: 20px 20px 20px 0;
 
   .duration {
     color: ${silver};
     text-align: right;
+    line-height: 1.4;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 14px;
   }
   .company {
     color: ${silver};
+    text-align: right;
+    line-height: 1.4;
     font-size: 12px;
   }
 `;
@@ -55,6 +60,7 @@ const PositionAndDescription = styled.div`
     font-weight: 400;
     color: ${white};
     font-size: 18px;
+    line-height: 1.4;
     margin-bottom: 10px;
   }
   .description {
@@ -71,13 +77,13 @@ const PositionAndDescription = styled.div`
     width: 6px;
     box-shadow: 0px 0px 5px 0px ${blue};
     left: -7px;
-    top: 25px;
+    top: 26px;
   }
 `;
 export default function ProfessionalCareer({}: Props): ReactElement {
   const renderPositions = () =>
     professionalCareerData.map((career) => (
-      <ProfessionalCareerContainer>
+      <ProfessionalCareerContainer key={career.id}>
         <CompanyAndDuration>
           <p className="duration">{career.duration}</p>
           <p className="company">{career.companyName}</p>

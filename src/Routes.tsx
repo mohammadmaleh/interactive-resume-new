@@ -5,6 +5,7 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
+import { useTransition, animated } from "react-spring";
 import { Home, User } from "@styled-icons/boxicons-regular";
 import { Work } from "@styled-icons/material";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";
@@ -54,21 +55,47 @@ export const pages = [
   },
 ];
 export default function Routes({}: Props): ReactElement {
+  const location = useLocation();
+  const transitions = useTransition(location, {
+    keys: location.pathname,
+    from: { opacity: 0, transform: "translateX(40px)" },
+    enter: { opacity: 1, transform: "translateX(0px)" },
+    leave: { opacity: 0, transform: "translateX(-40px)" },
+    config: { tension: 220, friction: 26 },
+  });
+
   return (
     <div
       style={{
         width: "100%",
         height: "100%",
         position: "relative",
-        overflow: "auto",
+        overflow: "hidden",
       }}
     >
-      <RouterRoutes>
-        {pages.map((page) => (
-          <Route key={page.id} path={page.link} element={<page.component />} />
-        ))}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </RouterRoutes>
+      {transitions((style, item) => (
+        <animated.div
+          style={{
+            ...style,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <RouterRoutes location={item}>
+            {pages.map((page) => (
+              <Route
+                key={page.id}
+                path={page.link}
+                element={<page.component />}
+              />
+            ))}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </RouterRoutes>
+        </animated.div>
+      ))}
     </div>
   );
 }

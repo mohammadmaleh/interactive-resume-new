@@ -72,21 +72,34 @@ export default function BasicInfo({}: Props): ReactElement {
   return (
     <Container data-test="basic-info">
       <ProfileImage />
-      <Name>MOHAMMAD AL MALEH</Name>
-      <JobDescription>Frontend Engineer</JobDescription>
+      <Name>MOHAMAD AL MALEH</Name>
+      <JobDescription>Senior Frontend Engineer</JobDescription>
       <IconsContainer>
         <IconContainerDiv title="Checkout my Github Account">
-          <a href="https://github.com/mohammadmaleh" target="_blank">
+          <a
+            href="https://github.com/mohammadmaleh"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Checkout my Github account"
+          >
             <GithubIcon />
           </a>
         </IconContainerDiv>
         <IconContainerDiv title="Message me on LinkedIn">
-          <a href="https://www.linkedin.com/in/mohammad-maleh/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mohammad-maleh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Message me on LinkedIn"
+          >
             <LinkedInIcon />
           </a>
         </IconContainerDiv>
         <IconContainerDiv title="Send me an email">
-          <a href="mailto:mohammad.maleh@gmail.com" target="_blank">
+          <a
+            href="mailto:mohammad.maleh@gmail.com"
+            aria-label="Send me an email"
+          >
             <MailIcon />
           </a>
         </IconContainerDiv>
@@ -94,6 +107,8 @@ export default function BasicInfo({}: Props): ReactElement {
           <a
             href="https://drive.google.com/file/d/1pND9_EnxjL6o6tbLl3yj-B_pB-nvIkH4/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download my resume"
           >
             <DownloadIcon />
           </a>

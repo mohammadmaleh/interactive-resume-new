@@ -32,7 +32,7 @@ export default function HomePage({}: Props): ReactElement {
       <Container>
         <div></div>
         <Name>Mohamad Al Maleh</Name>
-        <Profession>Senior Frontend Developer</Profession>
+        <Profession>Senior Frontend Engineer</Profession>
       </Container>
     </PageContainer>
   );

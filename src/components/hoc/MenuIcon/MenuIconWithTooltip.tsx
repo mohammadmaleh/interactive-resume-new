@@ -49,7 +49,7 @@ const IconBackground = styled(animated.div)`
   z-index: 0;
 `;
 
-export const MenuIconWithTooltip = ({
+const MenuIconWithTooltipComponent = ({
   Icon,
   link,
   name,
@@ -69,7 +69,6 @@ export const MenuIconWithTooltip = ({
     config: {
       easing: easings.easeCubic,
     },
-    reset: true,
   });
 
   const handleMouseEnter = (e: React.MouseEvent) => {
@@ -94,6 +93,7 @@ export const MenuIconWithTooltip = ({
     <IconContainer
       ref={containerRef}
       active={isActive}
+      aria-label={name}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -116,4 +116,11 @@ export const MenuIconWithTooltip = ({
     </IconContainer>
   );
 };
+
+// Memoized so that tooltip state changes in the parent (which fire on every
+// hover / mouse move over any item) don't re-render — and thereby re-trigger the
+// selected-background animation of — the other menu icons. All props passed in
+// are referentially stable, so the active icon only re-renders when the route
+// (its own `isActive`) actually changes.
+export const MenuIconWithTooltip = React.memo(MenuIconWithTooltipComponent);
 

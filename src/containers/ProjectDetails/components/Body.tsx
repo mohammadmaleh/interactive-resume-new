@@ -31,7 +31,7 @@ const MediaIcon = styled(PermMedia)`
 const BodyContainer = styled.div`
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 10px;
 `;
 const SectionContainer = styled.div`

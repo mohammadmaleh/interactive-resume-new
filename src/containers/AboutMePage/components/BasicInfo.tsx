@@ -30,11 +30,12 @@ export default function BasicInfo({}: Props): ReactElement {
   return (
     <SectionContainer>
       <AboutMeText>
-        Frontend Engineer with 10+ years of experience architecting React/TypeScript applications. 
-        At CELUS, I helped reduce codebase complexity by 60%, established the company's foundational 
-        design system, and have a proven track record of building scalable solutions across fintech 
-        and hardware engineering domains, with expertise in performance optimization and AI-driven 
-        feature integration.
+        Senior Frontend Engineer with 12 years of experience across fintech and deep-tech, building
+        React/TypeScript applications that handle real complexity. At CELUS I co-led a full architecture
+        rebuild (~40% smaller codebase, test coverage from near-zero to 90%), founded a design system
+        adopted company-wide, and integrated LLM-driven features into production. I write tests, care
+        about accessibility, and mentor junior developers — and I'm currently deepening my backend
+        skills with Python and FastAPI.
       </AboutMeText>
       <div>
         <InfoField>
@@ -47,7 +48,7 @@ export default function BasicInfo({}: Props): ReactElement {
         </InfoField>
         <InfoField>
           <p className="blue-text">Languages:</p>
-          <p>English (fluent), German (A1)</p>
+          <p>English (fluent, C1), German (A2), Arabic (native)</p>
         </InfoField>
         <InfoField>
           <p className="blue-text">Work Authorization:</p>

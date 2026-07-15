@@ -3,9 +3,9 @@ import Title from "../../../components/UI/Title/Title";
 import styled from "styled-components";
 import { SectionContainer } from "../../../components/UI/Layout/Layout";
 import { ReactLogo } from "@styled-icons/fa-brands/ReactLogo";
-import { Phone } from "@styled-icons/bootstrap/Phone";
+import { CodeAlt } from "@styled-icons/boxicons-regular/CodeAlt";
 import { DesignServices } from "@styled-icons/material-outlined/DesignServices";
-import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
+import { Bulb } from "@styled-icons/boxicons-regular/Bulb";
 import { blue } from "../../../constants/colors";
 interface Props {}
 
@@ -13,7 +13,7 @@ const BlueReactLogo = styled(ReactLogo)`
   color: ${blue};
   width: 40px;
 `;
-const BluePhone = styled(Phone)`
+const BlueCode = styled(CodeAlt)`
   color: ${blue};
   width: 40px;
 `;
@@ -21,7 +21,7 @@ const BlueDesign = styled(DesignServices)`
   color: ${blue};
   width: 40px;
 `;
-const BlueNode = styled(Nodejs)`
+const BlueBulb = styled(Bulb)`
   color: ${blue};
   width: 40px;
 `;
@@ -48,14 +48,13 @@ export default function WhatIDo({}: Props): ReactElement {
         </WhatIDoDescription>
       </div>
       <div>
-        <BluePhone />
+        <BlueCode />
 
-        <DescriptionTitle>Mobile Apps Development</DescriptionTitle>
+        <DescriptionTitle>Fullstack Development</DescriptionTitle>
         <WhatIDoDescription>
-          I have been developing mobile apps recently, using React Native,I
-          developed a very successful android app with over 1M downloads, and
-          making over 100k $ a month. <br />
-          and currently I'm developing a new app related to Instagram.
+          I build features end to end — React/TypeScript on the frontend and
+          Node.js/Express on the backend. <br />
+          I'm currently deepening my Python & FastAPI skills on a side project.
         </WhatIDoDescription>
       </div>
       <div>
@@ -68,12 +67,13 @@ export default function WhatIDo({}: Props): ReactElement {
         </WhatIDoDescription>
       </div>
       <div>
-        <BlueNode />
+        <BlueBulb />
 
-        <DescriptionTitle>Backend Development</DescriptionTitle>
+        <DescriptionTitle>Product &amp; Mentoring</DescriptionTitle>
         <WhatIDoDescription>
-          I'm able to develop in the backend using NodeJs and ExpressJs, but I
-          have little professional experience
+          I care about outcomes, not just code. I founded a company-wide design
+          system, ran frontend guilds, and mentor junior developers while
+          collaborating closely with product and design.
         </WhatIDoDescription>
       </div>
     </SectionContainer>

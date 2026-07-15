@@ -1,37 +1,14 @@
-import img from "../assets/profile-picture.png";
 import canGulec from "../assets/can-gulec.png";
-import fatihGaripoglu from "../assets/fatih-garipoglu.jpeg";
 import ceri from "../assets/ceri-tandogan.jpeg";
+import fatihGaripoglu from "../assets/fatih-garipoglu.jpeg";
 import sedat from "../assets/sedat.jpeg";
 import umut from "../assets/umut.jpg";
 
-import kamboMainImage from "../assets/projects/kambo/kambo-main-image.png";
-import kambo1 from "../assets/projects/kambo/kambo1.png";
-import kambo2 from "../assets/projects/kambo/kambo2.png";
-import kambo3 from "../assets/projects/kambo/kambo3.png";
-import kambo4 from "../assets/projects/kambo/kambo4.png";
-import kambo5 from "../assets/projects/kambo/kambo5.png";
-import kambo6 from "../assets/projects/kambo/kambo6.png";
-import kambo7 from "../assets/projects/kambo/kambo7.png";
-import kambo8 from "../assets/projects/kambo/kambo8.png";
-import kambo9 from "../assets/projects/kambo/kambo9.png";
-import kambo10 from "../assets/projects/kambo/kambo10.png";
-import kambo11 from "../assets/projects/kambo/kambo11.png";
-import kambo12 from "../assets/projects/kambo/kambo12.png";
-import kambo13 from "../assets/projects/kambo/kambo13.png";
-import kambo14 from "../assets/projects/kambo/kambo14.png";
-import familyTrackMainImage from "../assets/projects/family-track/family-track-main-image.png";
-import familyTrack1 from "../assets/projects/family-track/family-track1.jpg";
-import familyTrack2 from "../assets/projects/family-track/family-track2.jpg";
-import familyTrack3 from "../assets/projects/family-track/family-track3.jpg";
-import familyTrack4 from "../assets/projects/family-track/family-track4.jpg";
-import familyTrack5 from "../assets/projects/family-track/family-track5.jpg";
-import chatTrackMainImage from "../assets/projects/chat-track/chat-track-main-image.png";
-import chatTrack1 from "../assets/projects/chat-track/chat-track1.png";
-import chatTrack2 from "../assets/projects/chat-track/chat-track2.png";
-import chatTrack3 from "../assets/projects/chat-track/chat-track3.png";
 import avanteMainImage from "../assets/projects/avante/avante-main-image.png";
 import avante1 from "../assets/projects/avante/avante1.png";
+import avante10 from "../assets/projects/avante/avante10.png";
+import avante11 from "../assets/projects/avante/avante11.png";
+import avante12 from "../assets/projects/avante/avante12.png";
 import avante2 from "../assets/projects/avante/avante2.png";
 import avante3 from "../assets/projects/avante/avante3.png";
 import avante4 from "../assets/projects/avante/avante4.png";
@@ -40,9 +17,17 @@ import avante6 from "../assets/projects/avante/avante6.png";
 import avante7 from "../assets/projects/avante/avante7.png";
 import avante8 from "../assets/projects/avante/avante8.png";
 import avante9 from "../assets/projects/avante/avante9.png";
-import avante10 from "../assets/projects/avante/avante10.png";
-import avante11 from "../assets/projects/avante/avante11.png";
-import avante12 from "../assets/projects/avante/avante12.png";
+import chatTrackMainImage from "../assets/projects/chat-track/chat-track-main-image.png";
+import chatTrack1 from "../assets/projects/chat-track/chat-track1.png";
+import chatTrack2 from "../assets/projects/chat-track/chat-track2.png";
+import chatTrack3 from "../assets/projects/chat-track/chat-track3.png";
+import familyTrackMainImage from "../assets/projects/family-track/family-track-main-image.png";
+import familyTrack1 from "../assets/projects/family-track/family-track1.jpg";
+import familyTrack2 from "../assets/projects/family-track/family-track2.jpg";
+import familyTrack3 from "../assets/projects/family-track/family-track3.jpg";
+import familyTrack4 from "../assets/projects/family-track/family-track4.jpg";
+import familyTrack5 from "../assets/projects/family-track/family-track5.jpg";
+import fincanMainImage from "../assets/projects/fincan/fincan-main-image.png";
 import fincan1 from "../assets/projects/fincan/fincan1.png";
 import fincan2 from "../assets/projects/fincan/fincan2.png";
 import fincan3 from "../assets/projects/fincan/fincan3.png";
@@ -51,7 +36,6 @@ import fincan5 from "../assets/projects/fincan/fincan5.png";
 import fincan6 from "../assets/projects/fincan/fincan6.png";
 import fincan7 from "../assets/projects/fincan/fincan7.png";
 import fincan8 from "../assets/projects/fincan/fincan8.png";
-import fincanMainImage from "../assets/projects/fincan/fincan-main-image.png";
 import germanWarehouse1 from "../assets/projects/german-warehouse/german-warehouse1.png";
 import germanWarehouse2 from "../assets/projects/german-warehouse/german-warehouse2.png";
 import germanWarehouse3 from "../assets/projects/german-warehouse/german-warehouse3.png";
@@ -61,7 +45,11 @@ import germanWarehouse6 from "../assets/projects/german-warehouse/german-warehou
 import germanWarehouse7 from "../assets/projects/german-warehouse/german-warehouse7.png";
 import germanWarehouse8 from "../assets/projects/german-warehouse/german-warehouse8.png";
 import germanWarehouseMainImage from "../assets/projects/german-warehouse/react-main-image.png";
+import globalMainImage from "../assets/projects/global-energy/gep-main-image.png";
 import globalEnergy1 from "../assets/projects/global-energy/global-energy1.png";
+import globalEnergy10 from "../assets/projects/global-energy/global-energy10.png";
+import globalEnergy11 from "../assets/projects/global-energy/global-energy11.png";
+import globalEnergy12 from "../assets/projects/global-energy/global-energy12.png";
 import globalEnergy2 from "../assets/projects/global-energy/global-energy2.png";
 import globalEnergy3 from "../assets/projects/global-energy/global-energy3.png";
 import globalEnergy4 from "../assets/projects/global-energy/global-energy4.png";
@@ -70,10 +58,21 @@ import globalEnergy6 from "../assets/projects/global-energy/global-energy6.png";
 import globalEnergy7 from "../assets/projects/global-energy/global-energy7.png";
 import globalEnergy8 from "../assets/projects/global-energy/global-energy8.png";
 import globalEnergy9 from "../assets/projects/global-energy/global-energy9.png";
-import globalEnergy10 from "../assets/projects/global-energy/global-energy10.png";
-import globalEnergy11 from "../assets/projects/global-energy/global-energy11.png";
-import globalEnergy12 from "../assets/projects/global-energy/global-energy12.png";
-import globalMainImage from "../assets/projects/global-energy/gep-main-image.png";
+import kamboMainImage from "../assets/projects/kambo/kambo-main-image.png";
+import kambo1 from "../assets/projects/kambo/kambo1.png";
+import kambo10 from "../assets/projects/kambo/kambo10.png";
+import kambo11 from "../assets/projects/kambo/kambo11.png";
+import kambo12 from "../assets/projects/kambo/kambo12.png";
+import kambo13 from "../assets/projects/kambo/kambo13.png";
+import kambo14 from "../assets/projects/kambo/kambo14.png";
+import kambo2 from "../assets/projects/kambo/kambo2.png";
+import kambo3 from "../assets/projects/kambo/kambo3.png";
+import kambo4 from "../assets/projects/kambo/kambo4.png";
+import kambo5 from "../assets/projects/kambo/kambo5.png";
+import kambo6 from "../assets/projects/kambo/kambo6.png";
+import kambo7 from "../assets/projects/kambo/kambo7.png";
+import kambo8 from "../assets/projects/kambo/kambo8.png";
+import kambo9 from "../assets/projects/kambo/kambo9.png";
 
 import istanbulCosmaticClinic1 from "../assets/projects/istanbul-cosmatic-clinic/istanbul-cosmatic-clinic1.png";
 import istanbulCosmaticClinic2 from "../assets/projects/istanbul-cosmatic-clinic/istanbul-cosmatic-clinic2.png";
@@ -83,26 +82,27 @@ import istanbulCosmaticClinic6 from "../assets/projects/istanbul-cosmatic-clinic
 import istanbulCosmaticClinic7 from "../assets/projects/istanbul-cosmatic-clinic/istanbul-cosmatic-clinic7.png";
 import medicalMainImage from "../assets/projects/istanbul-cosmatic-clinic/medical-main-image.png";
 
-import interaudi6 from "../assets/projects/interaudi/interaudi6.png";
-import interaudi12 from "../assets/projects/interaudi/interaudi12.png";
-import interaudi1 from "../assets/projects/interaudi/interaudi1.png";
-import interaudi14 from "../assets/projects/interaudi/interaudi14.png";
-import interaudi11 from "../assets/projects/interaudi/interaudi11.png";
-import interaudi3 from "../assets/projects/interaudi/interaudi3.png";
-import interaudi9 from "../assets/projects/interaudi/interaudi9.png";
-import interaudi7 from "../assets/projects/interaudi/interaudi7.png";
-import interaudi2 from "../assets/projects/interaudi/interaudi2.png";
-import interaudi15 from "../assets/projects/interaudi/interaudi15.png";
-import interaudi5 from "../assets/projects/interaudi/interaudi5.png";
-import interaudi19 from "../assets/projects/interaudi/interaudi19.png";
-import interaudi8 from "../assets/projects/interaudi/interaudi8.png";
-import interaudi16 from "../assets/projects/interaudi/interaudi16.png";
-import interaudi4 from "../assets/projects/interaudi/interaudi4.png";
-import interaudi18 from "../assets/projects/interaudi/interaudi18.png";
-import interaudi13 from "../assets/projects/interaudi/interaudi13.png";
-import interaudi17 from "../assets/projects/interaudi/interaudi17.png";
 import interaudiMainImage from "../assets/projects/interaudi/interaudi-main-image.png";
+import interaudi1 from "../assets/projects/interaudi/interaudi1.png";
+import interaudi11 from "../assets/projects/interaudi/interaudi11.png";
+import interaudi12 from "../assets/projects/interaudi/interaudi12.png";
+import interaudi13 from "../assets/projects/interaudi/interaudi13.png";
+import interaudi14 from "../assets/projects/interaudi/interaudi14.png";
+import interaudi15 from "../assets/projects/interaudi/interaudi15.png";
+import interaudi16 from "../assets/projects/interaudi/interaudi16.png";
+import interaudi17 from "../assets/projects/interaudi/interaudi17.png";
+import interaudi18 from "../assets/projects/interaudi/interaudi18.png";
+import interaudi19 from "../assets/projects/interaudi/interaudi19.png";
+import interaudi2 from "../assets/projects/interaudi/interaudi2.png";
+import interaudi3 from "../assets/projects/interaudi/interaudi3.png";
+import interaudi4 from "../assets/projects/interaudi/interaudi4.png";
+import interaudi5 from "../assets/projects/interaudi/interaudi5.png";
+import interaudi6 from "../assets/projects/interaudi/interaudi6.png";
+import interaudi7 from "../assets/projects/interaudi/interaudi7.png";
+import interaudi8 from "../assets/projects/interaudi/interaudi8.png";
+import interaudi9 from "../assets/projects/interaudi/interaudi9.png";
 
+import kamboExchangeMain from "../assets/projects/kambo-exchange/exchange-main-image.png";
 import kamboExchange1 from "../assets/projects/kambo-exchange/kambo-exchange1.png";
 import kamboExchange2 from "../assets/projects/kambo-exchange/kambo-exchange2.png";
 import kamboExchange3 from "../assets/projects/kambo-exchange/kambo-exchange3.png";
@@ -112,7 +112,6 @@ import kamboExchange6 from "../assets/projects/kambo-exchange/kambo-exchange6.jp
 import kamboExchange7 from "../assets/projects/kambo-exchange/kambo-exchange7.jpeg";
 import kamboExchange8 from "../assets/projects/kambo-exchange/kambo-exchange8.jpeg";
 import kamboExchange9 from "../assets/projects/kambo-exchange/kambo-exchange9.jpeg";
-import kamboExchangeMain from "../assets/projects/kambo-exchange/exchange-main-image.png";
 
 import myKredit1 from "../assets/projects/myKredit/myKredit1.png";
 import myKredit2 from "../assets/projects/myKredit/myKredit2.png";
@@ -121,6 +120,7 @@ import myKredit4 from "../assets/projects/myKredit/myKredit4.png";
 import myKredit5 from "../assets/projects/myKredit/myKredit5.png";
 import myKreditMain from "../assets/projects/myKredit/mykredit-main-image.png";
 
+import papillaMain from "../assets/projects/papilla/papilla-main-image.png";
 import papilla1 from "../assets/projects/papilla/papilla1.png";
 import papilla2 from "../assets/projects/papilla/papilla2.png";
 import papilla3 from "../assets/projects/papilla/papilla3.png";
@@ -128,9 +128,14 @@ import papilla4 from "../assets/projects/papilla/papilla4.png";
 import papilla5 from "../assets/projects/papilla/papilla5.png";
 import papilla6 from "../assets/projects/papilla/papilla6.png";
 import papilla7 from "../assets/projects/papilla/papilla7.png";
-import papillaMain from "../assets/projects/papilla/papilla-main-image.png";
 
 import partnersPortal1 from "../assets/projects/partners-portal/partners-portal1.png";
+import partnersPortal10 from "../assets/projects/partners-portal/partners-portal10.png";
+import partnersPortal11 from "../assets/projects/partners-portal/partners-portal11.png";
+import partnersPortal12 from "../assets/projects/partners-portal/partners-portal12.png";
+import partnersPortal13 from "../assets/projects/partners-portal/partners-portal13.png";
+import partnersPortal14 from "../assets/projects/partners-portal/partners-portal14.png";
+import partnersPortal15 from "../assets/projects/partners-portal/partners-portal15.png";
 import partnersPortal2 from "../assets/projects/partners-portal/partners-portal2.png";
 import partnersPortal3 from "../assets/projects/partners-portal/partners-portal3.png";
 import partnersPortal4 from "../assets/projects/partners-portal/partners-portal4.png";
@@ -139,12 +144,6 @@ import partnersPortal6 from "../assets/projects/partners-portal/partners-portal6
 import partnersPortal7 from "../assets/projects/partners-portal/partners-portal7.png";
 import partnersPortal8 from "../assets/projects/partners-portal/partners-portal8.png";
 import partnersPortal9 from "../assets/projects/partners-portal/partners-portal9.png";
-import partnersPortal10 from "../assets/projects/partners-portal/partners-portal10.png";
-import partnersPortal11 from "../assets/projects/partners-portal/partners-portal11.png";
-import partnersPortal12 from "../assets/projects/partners-portal/partners-portal12.png";
-import partnersPortal13 from "../assets/projects/partners-portal/partners-portal13.png";
-import partnersPortal14 from "../assets/projects/partners-portal/partners-portal14.png";
-import partnersPortal15 from "../assets/projects/partners-portal/partners-portal15.png";
 import partnersPortalMain from "../assets/projects/partners-portal/pp-main-image.png";
 
 import proPlan1 from "../assets/projects/proPlan/proPlan1.png";
@@ -152,11 +151,11 @@ import proPlan2 from "../assets/projects/proPlan/proPlan2.png";
 import proPlan3 from "../assets/projects/proPlan/proPlan3.png";
 import proPlanMain from "../assets/projects/proPlan/proplan-main-image.png";
 
+import rossetaMain from "../assets/projects/rosetta/rosetta-main-image.png";
 import rosseta1 from "../assets/projects/rosetta/rosseta1.png";
 import rosseta2 from "../assets/projects/rosetta/rosseta2.png";
 import rosseta3 from "../assets/projects/rosetta/rosseta3.png";
 import rosseta4 from "../assets/projects/rosetta/rosseta4.png";
-import rossetaMain from "../assets/projects/rosetta/rosetta-main-image.png";
 
 import ticker1 from "../assets/projects/ticker/ticker1.jpg";
 import ticker2 from "../assets/projects/ticker/ticker2.jpg";
@@ -164,21 +163,22 @@ import ticker3 from "../assets/projects/ticker/ticker3.jpg";
 import ticker4 from "../assets/projects/ticker/ticker4.jpg";
 import tickermain from "../assets/projects/ticker/tickers-main-image.png";
 
+import trakyaMain from "../assets/projects/trakya/trakya-main-image.png";
 import trakya1 from "../assets/projects/trakya/trakya1.png";
 import trakya2 from "../assets/projects/trakya/trakya2.png";
 import trakya3 from "../assets/projects/trakya/trakya3.png";
-import trakyaMain from "../assets/projects/trakya/trakya-main-image.png";
 
-import trustTheProcess from "../assets/projects/trust-the-process/trusttheprocess.png";
-import trustTheProcessMain from "../assets/projects/trust-the-process/trust-main-image.png";
-import interactiveResumeMain from "../assets/projects/interactive-resume/interactive-resume-main-image.png";
 import instaLikesTraderMain from "../assets/projects/instaLikestrader/insta-likes-trader-main-image.png";
 import instaLikeTrader1 from "../assets/projects/instaLikestrader/instaLikeTrader1.jpg";
 import instaLikeTrader2 from "../assets/projects/instaLikestrader/instaLikeTrader2.jpg";
 import instaLikeTrader3 from "../assets/projects/instaLikestrader/instaLikeTrader3.jpg";
 import instaLikeTrader4 from "../assets/projects/instaLikestrader/instaLikeTrader4.jpg";
+import interactiveResumeMain from "../assets/projects/interactive-resume/interactive-resume-main-image.png";
+import trustTheProcessMain from "../assets/projects/trust-the-process/trust-main-image.png";
+import trustTheProcess from "../assets/projects/trust-the-process/trusttheprocess.png";
 
 import interActiveResume1 from "../assets/projects/interactive-resume/ineractive-resume1.png";
+import ineractiveResume10 from "../assets/projects/interactive-resume/ineractive-resume10.png";
 import interActiveResume2 from "../assets/projects/interactive-resume/ineractive-resume2.png";
 import interActiveResume3 from "../assets/projects/interactive-resume/ineractive-resume3.png";
 import interActiveResume4 from "../assets/projects/interactive-resume/ineractive-resume4.png";
@@ -187,10 +187,8 @@ import ineractiveResume6 from "../assets/projects/interactive-resume/ineractive-
 import ineractiveResume7 from "../assets/projects/interactive-resume/ineractive-resume7.png";
 import ineractiveResume8 from "../assets/projects/interactive-resume/ineractive-resume8.png";
 import ineractiveResume9 from "../assets/projects/interactive-resume/ineractive-resume9.png";
-import ineractiveResume10 from "../assets/projects/interactive-resume/ineractive-resume10.png";
 
-
-import celusMainImage from "../assets/projects/celus/celus-main-image.svg";
+import celusMainImage from "../assets/projects/celus/celus-main-image.jpeg";
 import celus1 from "../assets/projects/celus/celus1.png";
 import celus2 from "../assets/projects/celus/celus2.png";
 import celus3 from "../assets/projects/celus/celus3.png";
@@ -199,7 +197,7 @@ import celus5 from "../assets/projects/celus/celus5.png";
 import celus6 from "../assets/projects/celus/celus6.png";
 import celus7 from "../assets/projects/celus/celus7.png";
 export const projectTags = {
-  reactJsTag: "ReactJS",  
+  reactJsTag: "ReactJS",
   jQueryTag: "jQuery",
   HtmlCssTag: "HTML / SCSS",
   angularJsTag: "AngularJS",
@@ -273,23 +271,23 @@ export const professionalCareerData = [
     companyName: "CELUS, Munich",
     position: "Frontend Engineer",
     description:
-      "CELUS provides an AI-assisted electronics design platform that automatically generates circuit architectures and component lists (CUBOs) for hardware engineers.\n\n"
+      "CELUS provides an AI-assisted electronics design platform that automatically generates circuit architectures and component lists (CUBOs) for hardware engineers.\n\n",
   },
   {
     id: 2,
-    duration: "JUL 2015 - MAR 2017, rejoined SEP 2017 - MAY 2021",
+    duration: "JUL 2015 - MAY 2021",
     companyName: "Global Kapital Group, Istanbul",
-    position: "Senior Front-End Developer",
+    position: "Senior Frontend Developer",
     description:
-      "GKG is a diversified fintech conglomerate. I was part of an engineering team, joined as a mid-level developer, and then got promoted to a senior role. I contributed to multiple high-impact projects across multiple branches.\n\n" ,
+      "GKG is a diversified fintech conglomerate. I was part of an engineering team, joined as a mid-level developer, and then got promoted to a senior role. I contributed to multiple high-impact projects across multiple branches.\n\n",
   },
   {
     id: 3,
-    duration: "APR 2017 - AUG 2017",
+    duration: "APR 2017 - OCT 2017",
     companyName: "PROPLAN Project, Istanbul",
     position: "Senior Fullstack Developer",
     description:
-      "• Launched the creation of the company's new web development branch to modernize an outdated third-party construction project management system. As the sole developer, I established the complete development workflow, from setting up Jira boards and pipelines to managing Bitbucket repositories and defining tasks, to implement the back-end and front-end systems. Delivered a functional MVP within five months using modern technologies at the time, including AWS, Node.js/Express with an ORM for PostgreSQL, React with Redux, and Sass for styling.\n\n" 
+      "• Launched the creation of the company's new web development branch to modernize an outdated third-party construction project management system. As the sole developer, I established the complete development workflow, from setting up Jira boards and pipelines to managing Bitbucket repositories and defining tasks, to implement the back-end and front-end systems. Delivered a functional MVP within five months using modern technologies at the time, including AWS, Node.js/Express with an ORM for PostgreSQL, React with Redux, and Sass for styling.\n\n",
   },
   {
     id: 4,
@@ -303,7 +301,7 @@ export const professionalCareerData = [
     id: 5,
     duration: "",
     companyName: "Freelancing",
-    position: "",
+    position: "Freelance Developer",
     description:
       "I have worked on many commercial side projects for local businesses, mostly working on HTML/Sass and contact forms. The most notable one is a frontend application to manage a warehouse, shipping/returning system",
   },
@@ -558,10 +556,8 @@ export const projectsData = [
       I developed the most successful project of the company.
       the application is about track the online status of Whatsapp users without letting them know.
       I created my first React-native app for android,
-      The application has more than one million downloads on google play,
-      And making more than 100k dollars a month,
-      It introduced me into mobile development, and I'm very exited about react-native 
-      
+      The application passed one million downloads on google play.
+
       `,
 
     screenshots: [
@@ -880,8 +876,7 @@ export const projectsData = [
       github: "",
       screenshots:
         "https://drive.google.com/drive/folders/1EhWaaI2qQHEW_0LCl5CwNni6CbpcsopQ?usp=sharing",
-      link:
-        "https://play.google.com/store/apps/details?id=com.whatsdog.chatwatch.chattrack&hl=en_US&gl=US&showAllReviews=true",
+      link: "https://play.google.com/store/apps/details?id=com.whatsdog.chatwatch.chattrack&hl=en_US&gl=US&showAllReviews=true",
     },
     status: "online",
     name: "Chat Track",
@@ -951,8 +946,7 @@ export const projectsData = [
       github: "",
       screenshots:
         "https://drive.google.com/drive/folders/1MwZJWMRq-gvmda-TzG2lR0ECD87_a6UP?usp=sharing",
-      link:
-        "https://play.google.com/store/apps/details?id=com.gk.fincan&hl=en&gl=US",
+      link: "https://play.google.com/store/apps/details?id=com.gk.fincan&hl=en&gl=US",
     },
     status: "online",
     name: "Fincan",
@@ -1122,8 +1116,7 @@ export const projectsData = [
       github: "",
       screenshots:
         "https://drive.google.com/drive/folders/1ZQJW3PspabwOVsBy4LMqF_gIMYQTdIb9?usp=sharing",
-      link:
-        "https://play.google.com/store/search?q=instagram%20likes&c=apps&hl=en&gl=US",
+      link: "https://play.google.com/store/search?q=instagram%20likes&c=apps&hl=en&gl=US",
     },
     status: "online",
     name: "Trust The Process",

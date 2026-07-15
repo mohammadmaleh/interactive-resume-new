@@ -35,7 +35,6 @@ const Menu = styled.div`
 `;
 
 const NavigationMenu = styled(Menu)`
-  height: 150px;
   margin-top: 10px;
   padding: 15px 0;
   @media ${devices.mobileL} {

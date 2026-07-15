@@ -4,8 +4,7 @@ import { silver, white, blue, grey } from "../../../constants/colors";
 import TagsSection from "../../../components/TagsSection/TagsSection";
 import ResumeContext from "../../../context/resume.context";
 import { ProjectType } from "../../../types";
-import { useTransition, animated } from "react-spring";
-import * as easings from "d3-ease";
+import { animated } from "react-spring";
 interface Props {
   projectsData: ProjectType[];
 }
@@ -18,7 +17,7 @@ const ProjectsContainer = styled.div`
   flex-wrap: wrap;
   margin-top: 20px;
   justify-content: space-around;
-  overflow: scroll;
+  overflow: auto;
   position: relative;
   padding-top: 20px;
 `;
@@ -86,6 +85,7 @@ export default function Projects({ projectsData }: Props): ReactElement {
   const renderProjects = () =>
     projectsData.map((project) => (
       <ProjectContainer
+        key={project.name}
         title="Click to see more details"
         onClick={() => {
           changeSelectedProjectDetails(project.id);
